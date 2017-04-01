@@ -1,0 +1,155 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+	  	<title>Tae Hoon's Tech Blog</title>
+	  	<meta name="description" content="The HTML5 Herald">
+	  	<meta name="author" content="SitePoint">
+
+	  	<link href="view/css/style.css" rel="stylesheet" />
+	  	<link href="view/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="view/css/bootstrap-social.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+	  	<!-- <script src="js/scripts.js"></script> -->
+	  	<div class="site-title" data-content-field="site-title">
+		  	<a href="index.html">
+		  		<span class="site-title-text">Tae Hoon's Tech Blog</span>
+		  	</a>
+	  	</div>
+
+	  	<div class="social-icon">
+	  		<a href="https://www.linkedin.com/in/taehoonlee1/" target="_blank" class="icons">
+	  			<img src="view/images/linkedin-icon.png" alt="linkedin" width="25px" height="25px"/>
+	  		</a>
+
+	  		<a href="mailto:thlee1122@gmail.com"  target="_blank" class="icons">
+	  			<img src="view/images/email-icon.png" alt="email" width="25px" height="25px"/>
+	  		</a>
+
+	  		<a href="https://taehoon-portfolio.herokuapp.com/" target="_blank" class="icons">
+	  			<img src="view/images/letter-t-icon2.png" alt="taehoon-portfolio" width="25px" height="25px"/>
+	  		</a>
+	  	</div>
+
+	  	<div id="css-article-main">
+	  		<img src="view/images/laptop-coffee.jpg" alt="laptop-coffee" width="80%" height="600px"/>
+	  		
+	  		<div id="article-content">
+	  			<p class="center">March 30, 2017</p>
+	  			<h2 class="center">15 Useful CSS Tricks</h2>
+	  			<hr>
+	  			<p class="center">CSS</p>
+
+	  			<p class="article-content-padding">If you are a Front End or a Web Developer, you would often be dealing with CSS. You may have had those moments when you were trying to find out how to code something and realized that you can do that with CSS. CSS is becoming more and more powerful and nowadays, it allows a lot for possibilities. This post provides you with useful CSS tricks that you might have overlooked. Some of the tricks that are presented in this post are widely supported but not by all; others are on their way of being fully supported by all browsers.</p>
+
+	  			<!-- OVERRIDING ALL STYLES -->
+	  			<h4 class="article-subtitle">1. OVERRIDING ALL STYLES</h4>
+	  			<p>If you want to override another CSS style for a specific element, you can use <span>!important</span> after the style in your CSS. You should remember that this should be used moderately because if you use <span>!important</span> for everything, there may come troubles in the long run. For example, let’s say you have CSS style that sets all H2 headers green. If you were to set H2 headers in the specific section of the site as red, you would use the following CSS:</p>
+	  			<p class="image-pg-1"><img src="view/images/Overriding-CSS.png" width="500px" height="100px"/></p>
+
+	  			<!-- LINK STATES -->
+	  			<h4 class="article-subtitle">2. LINK STATES</h4>
+	  			<p>Link states styles are missed by many Front-End and Web Developers. Misuse of link states can create usability issues for the visitors. The <span>:link</span> pseudo-class controls the styling of all of the links that haven’t been clicked on yet. The <span>:visited</span> pseudo-class controls the styling of all of the links that have been clicked and visited. This tells the website visitors where they have already been to on the website, and where they have yet to explore.</p>
+	  			<p class="image-pg-1"><img src="view/images/Link-states.png" width="500px" height="100px"/></p>
+
+	  			<!-- :BEFORE -->
+	  			<h4 class="article-subtitle">3. :BEFORE</h4>
+	  			<p><span>:BEFORE</span> is a CSS selector that allows you to choose a CSS element and insert content before every element with a specific class applied to it. For example, if you want a specific text before every H1 header, you would then use the following CSS:</p>
+	  			<p class="image-pg-2"><img src="view/images/before-pseudo.png" width="500px" height="250px"/></p>
+	  			<p>You can also insert image before specific elements by putting URL of the image in the content. This becomes especially handy if you are using an icon font. You can place icons before certain elements and apply it globally.</p>
+
+	  			<!-- :AFTER -->
+	  			<h4 class="article-subtitle">4. :AFTER</h4>
+	  			<p>Like <span>:BEFORE</span> selector, you can use :AFTER to insert content globally on specific elements. For example, if you want to put green color “Read more” text after each paragraph, you would use the following CSS:</p>
+	  			<p class="image-pg-3"><img src="view/images/after-pseudo.png" width="500px" height="150px"/></p>
+
+	 			<!-- Drop Caps -->
+	 			<h4 class="article-subtitle">5. DROP CAPS</h4>
+	  			<p>A <span>drop cap</span> is a large capital letter at the beginning of a text block that has the depth of two or more lines of a regular text. This can be found in many old traditional books and it is a great way to start a page of content as the first large letter is what really grabs readers’ attention. In CSS, <span>drop caps</span> can be created by using pseudo element, <span>:first-letter</span>. Here is an example:</p>
+	  			<p class="image-pg-4"><img style="left: -35%"src="view/images/drop-caps.png" width="300px" height="200px"/></p>
+	  			<p>Above CSS sets the first letter to 3x the size of the other letters and sets the color of the letter to red. It sets margin to be 3px so that there would be 3px of space around the letter to avoid any overlapping.</p>
+
+	  			<!-- CSS SHAPES -->
+	  			<h4 class="article-subtitle">6. CSS SHAPES</h4>
+	  			<p><span>CSS Shapes</span> gives you the ability to wrap text around non-rectangular objects, such as flowing text around a curve. You can use <span>shape-outside</span> property to curve text around a floated image. This property can be used on floated elements. Below is an example:</p>
+	  			<p class="image-pg-4"><img style="left: -32%"src="view/images/css-shapes.png" width="400px" height="200px"/></p>
+	  			<p class="image-pg-5"><img style="left: -18%"src="view/images/css-shapes-image.jpg" width="700px" height="400px"/></p>
+	  			
+	  			<!-- COLOR FADE ON HOVER -->
+	  			<h4 class="article-subtitle">7. COLOR FADE ON HOVER</h4>
+	  			<p>You can set the color of a specific link to fade on hover using <span>:hover</span> pseudo-class. Below is an example:</p>
+	  			<p class="image-pg-6"><img style="left: -28%"src="view/images/color-fade.png" width="500px" height="300px"/></p>
+	  			<p>In the example, the color of the link has been set to blue and transition properties have been used for color to slowly fade in. Under <span>:hover</span> pseudo-class, color of the link has been set as green, so when the user hover over the link, the color of the link will slowly make a transition  into green.</p>
+
+	  			<!-- STYLE BROKEN IMAGES -->
+	  			<h4 class="article-subtitle">8. STYLE BROKEN IMAGES</h4>
+	  			<p>Broken images on the website never look good and give feelings that website is not properly managed to visitors. Broken images happen every now and then, having one or two images on website in broken condition. Using some advanced CSS techniques, we can style broken images and provide custom error messages to the visitors. Following is an example: </p>
+	  			<p class="image-pg-6"><img style="left: -28%"src="view/images/broken-image-css.png" width="500px" height="300px"/></p>
+	  			<p class="image-pg-7"><img src="view/images/broken-image-css-image.jpg" width="500px" height="100px"/></p>
+	  			<p>In the example, <span>:after</span> pseudo-class has been used to show customer an error message if the image is broken. In the content property, you can input custom error message with <span>alt (optional image name)</span>. Custom error message looks much better and more professional than the browsers’ default.</p>
+
+	  			<!-- COMMA-SEPARATED LISTS -->
+	  			<h4 class="article-subtitle">9. COMMA-SEPARATED LISTS</h4>
+	  			<p>We can display an unordered list as a comma-separated list by using <span>:after</span>pseudo-class with content property of “,”. Note the use of <span>:not(:last-child)</span> to ensure that the comma won’t be inserted after the last list element.</p>
+	  			<p class="image-pg-1"><img style="left: -28%"src="view/images/comma-separated.png" width="500px" height="100px"/></p>
+
+	  			<!-- NUMBERING HEADINGS & SUBHEADINGS -->
+	  			<h4 class="article-subtitle">10.	NUMBERING HEADINGS & SUBHEADINGS</h4>
+	  			<p>Let’s say you have a set of headings and subheadings that need to be manually numbered. For this, you can use a trick called CSS <span>counter</span> to number the headings and subheadings automatically. It is supported by all browsers, with the exception of Internet Explorer 6. Following is an example:</p>
+	  			<p class="image-pg-6"><img style="left: -26%"src="view/images/numbering-headings.png" width="500px" height="300px"/></p>
+	  			<p class="image-pg-8"><img style="left: -26%"src="view/images/numbering-headings-image.png" width="500px" height="300px"/></p>
+	  			<p>The <span>Counter-reset</span> property creates or resets one or more counters. The <span>Counter-reset</span> property is used together with the <span>counter-increment</span> property and the <span>content</span> property.</p>
+
+	  			<!-- CSS STICKY ELEMTENT -->
+	  			<h4 class="article-subtitle">11. CSS STICKY ELEMENT</h4>
+	  			<p><span>Sticky elements</span> are elements on a page that will not be scrolled out of view. In other words, it sticks to a visible area. You can create this with CSS using <span>position: sticky</span>. For now, only Firefox supports this trick.</p>
+	  			<p class="image-pg-6"><img style="left: -26%"src="view/images/sticky-elements.png" width="500px" height="300px"/></p>
+
+	  			<!-- MANDATORY FIEDLS (FORM) -->
+	  			<h4 class="article-subtitle">12. MANDATORY FIELDS (FORM)</h4>
+	  			<p>If you are attempting to create a form with required or optional specific fields to be filled out by the users, you can use <span>:required :optional</span> pseudo-class. Below is an example:</p>
+	  			<p class="image-pg-4"><img style="left: -32%"src="view/images/mandatory-form.png" width="400px" height="200px"/></p>
+	  			<p>In the example, the border of the required field is set to be in solid pink color whereas the optional field is in solid blue color. </p>
+
+	  			<!-- CSS CHECKED -->
+	  			<h4 class="article-subtitle">13. CSS CHECKED</h4>
+	  			<p>In a situation where a checkbox has been checked, it would be nice to have another indication apart from the tiny checkmark inside the checkbox to show that the item has been checked.</p>
+	  			<p>There is CSS for that which exploits the bond between the immediate siblings, two elements side by side. CSS has adjacent sibling selector denoted by the “+” sign, and you can use it to target the label beside the checkbox. You can use <span>:checked</span> pseudo-class to select the checked checkbox. Following is an example:</p>
+	  			<p class="image-pg-1"><img src="view/images/checked.png" style="left:-32%" width="400px" height="100px"/></p>
+	  			<p>In the example, it is selecting the checked checkbox along with its label, and highlighting the background with yellow color.</p>
+
+	  			<!-- DISCLOSE FILE FORMAT -->
+	  			<h4 class="article-subtitle">14. DISCLOSE FILE FORMAT</h4>
+	  			<p>Let’s say you have a link of PDF file in your website and you want to show the file format as its form, PDF. There is a CSS trick which allows you to do this by inputting a small image of PDF behind the link. You can use <span>content:url()</span> to display the image behind the link.</p>
+	  			<p class="image-pg-1"><img src="view/images/disclose-file-format.png" style="left:-7%" width="1000px" height="100px"/></p>
+	  			<p>In the example, it is selecting all the link that has “.pdf” at the end and it is using <span>::after</span> pseudo-class to insert the image behind the link.</p>
+	  		</div>
+	  	</div>
+
+	  	<hr id="divider">
+	  	
+	  	<div id="related-post">
+	  		<h2 class="related-post-center">Related Posts</h2>
+	  		<h4 class="related-post-center">Coming Soon...</h4>
+	  	</div>
+
+	  	<hr id="divider">
+
+	  	<footer class="footer">
+	  		<h3>Subscribe</h3>
+	  		<p>Get updates on most recent posts.</p>
+	  		<p class="message" id="error-message">Please input valid email address.</p>
+	  		<p class="message" id="success-message">Thank you for subscribing!</p>
+	  		<input id="subscription-box" type="text" placeholder="Email Address">
+	  		<input id="submit-btn" type="submit" value="SIGN UP">
+	  	</footer>
+
+	 	<script type="text/javascript" src="view/js/script.js"></script>
+	</body>
+
+</html>
